@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import ListVariants from '../ListVariants/ListVariants.js';
+import ListVariants from '../ListVariants/ListVariants';
 
 const FetchData = () => {
 	const [instances, setInstances] = useState([]);

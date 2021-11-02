@@ -1,0 +1,21 @@
+#plan {
+	border-collapse: collapse;
+  width: 100%;
+}
+
+#plan tr:hover {
+	background-color: #f6f6fb;
+}
+
+.alignRightElement {
+	text-align: right;
+}
+
+.spaceElementFlavors {
+	padding-left: 10px;
+	text-align: left;
+}
+
+#plan th, td {
+	font-size: var(--global-size);
+}
