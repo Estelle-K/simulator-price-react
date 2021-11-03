@@ -1,7 +1,7 @@
 
 # Price's Simulator with React
 
-This is a price's simulator created with React.
+This is a price's simulator created with React. Only grid and flexbox for the structure. Adaptive layouts without media queries.
 
 
 ## Badges
