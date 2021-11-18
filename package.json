@@ -2,10 +2,10 @@
 	"name": "simulator-price-react",
 	"version": "1.0.0",
 	"description": "",
-	"main": "index.js",
+	"browserslist": "last 2 Chrome versions",
 	"scripts": {
 		"start": "parcel index.html",
-		"build": "parcel build index.html --public-url ./",
+		"build": "parcel build index.html",
 		"format": "prettier --write \"src/**/*.{js,jsx}\"",
 		"lint": "eslint \"src/**/*.{js,jsx}\" --quiet"
 	},
@@ -28,8 +28,5 @@
 		"eslint-plugin-react-hooks": "^4.2.0",
 		"parcel": "^1.12.3",
 		"prettier": "^2.4.1"
-	},
-  "browserslist": [
-		"last 2 Chrome versions"
-	]
+	}
 }

@@ -76,7 +76,6 @@ const ListVariants = ({ variants }) => {
 					setFlavorPrice={setFlavorPrice}
 					flavorName={flavorName}
 					setFlavorName={setFlavorName}
-					setVariantName={setVariantName}
 					display={display}
 					setDisplay={setDisplay}
 					listCart={listCart}
@@ -89,11 +88,8 @@ const ListVariants = ({ variants }) => {
 				<div className="headerList sticky alignElement">Shopping Cart</div>
 				<ListCart
 					flavorName={flavorName}
-					setFlavorName={setFlavorName}
 					variantName={variantName}
-					setVariantName={setVariantName}
 					flavorPrice={flavorPrice}
-					setFlavorPrice={setFlavorPrice}
 					display={display}
 					setDisplay={setDisplay}
 					listCart={listCart}

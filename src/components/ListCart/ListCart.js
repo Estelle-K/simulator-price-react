@@ -6,9 +6,6 @@ const ListCart = ({
 	flavorName,
 	variantName,
 	flavorPrice,
-	setFlavorName,
-	setVariantName,
-	setFlavorPrice,
 	setDisplay,
 	display,
 	listCart,
@@ -53,10 +50,8 @@ const ListCart = ({
 									{cart.flavorName}
 								</span>
 								<div>
-									Prix :{' '}
-									<span className="boldElement">
-										{cart.flavorPrice.toFixed(2)} €
-									</span>
+									Price :{' '}
+									<span className="boldElement">€{cart.flavorPrice.toFixed(2)}</span>
 								</div>
 							</div>
 						</div>

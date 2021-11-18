@@ -1,4 +1,4 @@
-import { useEffect, useContext } from 'react';
+import { useContext } from 'react';
 import TotalContext from '../../TotalContext';
 import './ListFlavors.css';
 import imgAdd from '../../assets/outline_add_white_24dp.png';
@@ -10,7 +10,6 @@ const ListFlavors = ({
 	setFlavorPrice,
 	flavorName,
 	setFlavorName,
-	setVariantName,
 	display,
 	setDisplay,
 	listCart,
@@ -58,21 +57,21 @@ const ListFlavors = ({
 									</td>
 									<td
 										data-label="CPUs"
-										className="boldElement alignRightElement"
+										className="alignRightElement"
 									>
 										{flavor.cpus}
 									</td>
 									<td
 										data-label="GPUs"
-										className="boldElement alignRightElement"
+										className="alignRightElement"
 									>
 										{flavor.gpus}
 									</td>
 									<td
 										data-label="RAM"
-										className="boldElement alignRightElement"
+										className="alignRightElement"
 									>
-										{flavor.ram}
+										 {flavor.ram < 1024 ? flavor.ram + 'MB' : flavor.ram / 1024 + 'Go'}
 									</td>
 									<td>
 										<div

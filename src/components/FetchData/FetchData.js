@@ -20,25 +20,23 @@ const FetchData = () => {
 	}
 
 	function getVariants() {
-		let variants = [];
-		for (const instance of instances) {
-			let flavors = [];
-			for (const flavor of instance.flavors) {
-				flavors.push({
-					flavor_name: flavor.name,
-					cpus: flavor.cpus,
-					gpus: flavor.gpus,
-					ram: flavor.mem,
- 					price: flavor.price * 41.904,
-				});
-			}
-			variants.push({
-				name: instance.variant.name,
-				logo: instance.variant.logo,
-				id: instance.variant.id,
-				flavors: flavors,
+		let variants = instances.map(instance => {
+			let flavors = instance.flavors.map(flavor => {
+			  return {
+				flavor_name: flavor.name,
+				cpus: flavor.cpus,
+				gpus: flavor.gpus,
+				ram: flavor.mem,
+				price: flavor.price * 41.904,
+			  };
 			});
-		}
+			return {
+			  name: instance.variant.name,
+			  logo: instance.variant.logo,
+			  id: instance.variant.id,
+			  flavors: flavors,
+			};
+		  });
 		setVariants(variants);
 		setFlavors(flavors);
 	}
